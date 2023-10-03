@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Weather Data Visualization</h1>
+    
+    <div>
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" placeholder="Enter a valid Latitude">
+        <br>
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" placeholder="Enter a valid Longitude">
+        <br>
+        <button id="fetchWeatherData">Fetch Weather Data</button>
+    </div>
+    
+    <div id="weatherChartContainer">
+        <canvas id="weatherChart"></canvas>
+    </div>
+</body>
+</html>
